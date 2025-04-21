@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>programmer</title>
+    <link rel="stylesheet" href="/log in project/programmer_joined.CSS">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .sidebar {
+            width: 300px;
+            background-color: #0c0c0c;
+            border-left: 1px solid #ccc;
+            position: fixed;
+            top: 60px;
+            right: -300px;
+            height: calc(100% - 60px);
+            transition: right 0.3s ease;
+            overflow-y: auto;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        button {
+            padding: 20px;
+            background-color: #0c0c0c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin: 10px 0;
+            width: 100%;
+            height: 60px;
+            box-sizing: border-box;
+            font-size: 1.2rem;
+        }
+        button:hover {
+            background-color: #8D2A2A;
+        }
+        #header {
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            background: #0c0c0c;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            padding: 0.5rem;
+            border-bottom: 0.12rem solid white;
+        }
+        .logo a {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #8D2A2A;
+            font-family: "Kalam", cursive;
+            text-decoration: none;
+        }
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+        }
+        .sidebar.active {
+            right: 0;
+        }
+        .sidebar-buttons {
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+        }
+    </style>
+
+    <script src="https://js.stripe.com/v3/"></script>
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="/">FP Find.programmer</a>
+        </div>
+        <div id="menu0-1">
+            <div class="hamburger" id="hamburgerMenu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="content">
+        <div id="sidebar" class="sidebar">
+            <div class="sidebar-buttons">
+                <button id="messagesButton">Messages</button>
+                <button id="paymentButton">Payment</button>
+                <button id="logoutButton">Logout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================================= -->
+    <div id="div0-1">
+        <span id="welcomeMessage">Welcome to <a href="/"> FP</a> genieus , (Programmer name) </span>
+    </div>
+    <!-- ============================================ -->
+
+    <!-- ======================================= -->
+    <div id="div0-3">
+        <h3>Recommended<br> Jobs</h3>
+        <div class="div1-3">
+            <div class="p-1">
+                <a href="/seniorFrontend"><span> Frontend Developer</span></a>
+            </div>
+            <div class="p-2">
+                <p> <span> Skills</span> : JavaScript, React, HTML, CSS
+                    <br> <span>Description :</span> FP on cutting edge projects in a fast
+                    paced
+                    environment. </p>
+            </div>
+        </div>
+        <div class="div1-3">
+            <div class="p-1">
+                <a href="/Backend_Engineer"> <span> Engineer</span> </a>
+            </div>
+            <div class="p-2">
+                <p><span> Skills :</span> Python, Django, SQL
+                    <br><span>Description :</span> Help users build
+                    scalable and efficient backend systemsfor their innovative products.</p>
+            </div>
+        </div>
+        <div class="div1-3">
+            <div class="p-1">
+                <a href="/fullStack"><span> Stack Developer</span> </a>
+            </div>
+            <div class="p-2">
+                <p><span> Skills :</span> Node.js, Angular, MongoDB
+                    <br><span>Description :</span>Develop end to end
+                    solutions for our clients and contribute to the success of their projects. </p>
+            </div>
+        </div>
+        <div class="div1-3">
+            <div class="p-1">
+                <a href="/MobileAppDeveloper"><span> App Developer</span></a>
+            </div>
+            <div class="p-2">
+                <p><span> Skills :</span> Swift, iOS, Android
+                    <br><span>Description :</span> Create innovative
+                    mobile applications that delight our users. </p>
+            </div>
+        </div>
+    </div>
+    <!-- =============================================== -->
+    <div id="div0-4">
+        <p>who is your clients ? </p>
+    </div>
+    <!-- ================================================= -->
+    <div id="div0-5">
+        <div class="div1-5">
+            <div class="imag-list">
+                <img class="imag-item" src="/log in project/imgs/programmer joined-1.jpg" alt="">
+                <p>Business Clients </p>
+            </div>
+            <div class="imag-list">
+
+                <img class="imag-item" src="/log in project/imgs/programmer joined-2.jpg" alt="">
+                <p>Startups</p>
+                </div>
+                <div class="imag-list">
+
+                    <img class="imag-item" src="/log in project/imgs/programmer joined-3.jpg" alt="">
+                    <p>Government Agencies</p>
+                </div>
+</div>
+                <div class="div1-5">
+                    <div class="imag-list">
+
+                        <img class="imag-item" src="/log in project/imgs/programmer joined-4.jpg" alt="">
+                        <p>Individual Clients</p>
+                    </div>
+                    <div class="imag-list">
+
+                        <img class="imag-item" src="/log in project/imgs/programmer joined-5.jpg" alt="">
+                        <p>Non Profit Organizations</p>
+                    </div>
+                    <div class="imag-list">
+
+                        <img class="imag-item" src="/log in project/imgs/programmer joined-6.jpg" alt="">
+                        <p>Digital Agencies</p>
+                    </div>
+                </div>
+            </div>
+    
+
+    <!-- =============================================== -->
+    <footer id="footer">
+        <div id="div0-f">
+            <div id="div1-f" class="footerDivs">
+                <h1>
+                    FP <br>
+                    Find.Programmer
+                </h1>
+            </div>
+            <div id=div2-f class="footerDivs">
+                <ul>
+                    <li>
+                        Group BAU
+                    </li>
+                    <br>
+                    <li>
+                        <a href="/About">About us</a>
+                    </li>
+                    <li>
+                        <a href="/TermsOfServices">Terms of services</a>
+                    </li>
+                    <li>
+                        <a href="/PrivacyPolicy">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div id=div3-f class="footerDivs">
+                <ul>
+                    <li>
+                        Follow us
+                    </li>
+                    <br>
+                    <li>
+                        <a href="">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="div4-f" class="footerDivs">
+                <ul>
+                    <li>contact us</li>
+                    <br>
+                    <li><a href="">mohammad.38002@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div id="div5-f">
+            <img src="/log in project/imgs/BAU.jpg" alt="BAU" class="BAU-image">
+        </div>
+        <div id="div6-f">
+            <div class="start">From BAU</div>
+            <div class="end">Made with . in BAU @2024 FP... </div>
+        </div>
+        <br> <br>
+    
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const welcomeMessage = sessionStorage.getItem('welcomeMessage');
+            if (welcomeMessage) {
+                // document.getElementById('welcomeMessage').textContent = welcomeMessage;
+                document.getElementById('welcomeMessage').innerHTML = `Welcome to <a href="/"> FP</a> genieus , ${welcomeMessage}!`;
+
+            }
+        });
+    </script>
+    <script>
+        const sidebar = document.getElementById('sidebar');
+        const hamburgerMenu = document.getElementById('hamburgerMenu');
+        let sidebarActive = false;
+    
+        hamburgerMenu.addEventListener('click', () => {
+            sidebarActive = !sidebarActive;
+            sidebar.classList.toggle('active', sidebarActive);
+        });
+    
+        document.getElementById('messagesButton').addEventListener('click', () => {
+            window.location.href = 'http://localhost:5173/';
+        });
+    
+        document.getElementById('paymentButton').addEventListener('click', () => {
+            window.location.href = 'http://localhost:3001/payment';
+        });
+    
+        document.getElementById('logoutButton').addEventListener('click', () => {
+            window.location.href = '/';
+        });
+    </script>
+    
+    <script src="/log in project/major.js"></script>
+
+</body>
+
+</html>

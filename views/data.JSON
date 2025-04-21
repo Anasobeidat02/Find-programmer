@@ -1,0 +1,62 @@
+[
+    {
+        "_id": "6633dcfbea8e0416ceff3d65",
+        "age": 22,
+        "jobTitleName": "web devloper",
+        "name": "mohammed mousa",
+        "phoneNumber": "0788616370",
+        "emailAddress": "mohammad.38002@gmail.com",
+        "note": "Studied in BAU my major is computer science and I chose to be web back-end developer and i did some projects like todo list, youtube page , website about fitness and website online shopping …. feel free to deal with me to make best project with your needs and ideas with short time Deals pay started with 500$ and it increases or decreases depending on your needs ",
+        "lastKey": "Thanks for you genius"
+    },
+    {
+        "_id": "6633dcfcea8e0416ceff3d66",
+        "age": 22,
+        "jobTitleName": "web devloper",
+        "name": "anas obidat",
+        "phoneNumber": "0796378627",
+        "emailAddress": "anasmobeidat88@gmail.com",
+        "note": "Studied in BAU my major is computer science and I chose to be web full stack developer",
+        "lastKey": "thank for you"
+    },
+    {
+        "_id": "6633dcfcea8e0416ceff3d67",
+        "age": 22,
+        "jobTitleName": "web devloper",
+        "name": "haya al-saleh",
+        "phoneNumber": "0791927746",
+        "emailAddress": "ahaya219@gmail.com",
+        "note": "I studied Computer Science at B.A.U ",
+        "lastKey": "thank for you"
+    },
+    {
+        "_id": "6633dcfcea8e0416ceff3d68",
+        "age": 22,
+        "jobTitleName": "web devloper",
+        "name": "shaima Nawafleh",
+        "phoneNumber": "0776542498",
+        "emailAddress": "Shaimanawafleh26o@gmail.com",
+        "note": "I studied Computer Science at B.A. University, where I executed various websites using HTML, CSS, and JavaScript, including to-do lists and user interfaces for e-commerce websites. I'm also proficient in developing interactive web applications and creating innovative user interfaces. If you're looking for a front-end developer to help you enhance the design of your amazing website, then you're in the right place. Customer satisfaction is my top priority. Delivery of work on time is guaranteed. Prices start from $440.Let's get started!",
+        "lastKey": "thank for you"
+    },
+    {
+        "_id": "6633dcfcea8e0416ceff3d69",
+        "age": 20,
+        "jobTitleName": "web devloper",
+        "name": "rama hourani",
+        "phoneNumber": "0771923062",
+        "emailAddress": "alhwranymhmd12@gmail.com",
+        "note": "Studied in ABU is computer science and I chose to be web full-stack(front and back end) developer,A professional website developer of experience in front-end and back-end development. Specializes in using programming languages such as HTML, CSS, JavaScript, and frameworks like MongoDB and Node.js. Experienced in designing and developing attractive user interfaces and high-performance dynamic websites.",
+        "lastKey": "thank you"
+    },
+    {
+        "_id": "6633dcfcea8e0416ceff3d6a",
+        "age": 22,
+        "jobTitleName": "web devloper",
+        "name": "mohammed melhem",
+        "phoneNumber": "07 7793 4882",
+        "emailAddress": "mohammednmelhem@gmail.com",
+        "note": " Studied in BAU my major is computer science I chose to be Proficiency in programming languages such as HTML, CSS, and JavaScript. Experience with frameworks such as React.js, Angular.js, and Vue.js.Solid understanding of backend technologies like Node.js and Express.js. Proficiency with solid databases including MySQL.Knowledge of design techniques and user experience (UI/UX). Ability to work with modern tools and technologies in web development. Excellent communication skills and ability to work in a team.",
+        "lastKey": "thanks"
+    }
+]

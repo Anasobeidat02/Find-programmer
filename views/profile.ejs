@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= user.firstName || user.name %></title>
+  <style>
+    body {
+      background-color: #191919;
+      color: white;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .profile-card {
+      max-width: 600px;
+      margin: auto;
+      background-color: #333;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .profile-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .profile-card h1 {
+      color: rgb(164, 164, 8);
+    }
+    .profile-card p {
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <img src="<%= user.profilePicture%>" alt="User Image">
+    <h1><%= user.name %></h1>
+    <p><strong>Email:</strong> <%= user.email %></p>
+    <p><strong>Note:</strong> <%= user.note %></p>
+    <p><strong>Rate:</strong> <%= user.rate %></p>
+    <% if (Array.isArray(user.preProjects) && user.preProjects.length > 0) { %>
+        <p><strong>Pre projects:</strong></p>
+        <ul>
+            <% user.preProjects.forEach(function(project) { %>
+                <li><%= project %></li> 
+            <% }); %>
+        </ul>
+    <% } else { %>
+        <p>No pre projects available.</p>
+    <% } %>
+    
+    
+    <p><strong>Payment:</strong> <%= user.payment %></p>
+    <p><strong>Certification:</strong> <a href="<%= user.certifications %>">Download</a></p>
+  </div>
+</body>
+</html>

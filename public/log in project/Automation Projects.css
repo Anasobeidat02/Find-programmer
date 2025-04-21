@@ -1,0 +1,415 @@
+body {
+    background-color: aliceblue;
+    padding: 0;
+    margin: 0;
+}
+
+/*========================================================================*/
+#header {
+    font-family: "roboto";
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #0c0c0c;
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-top: 0;
+    z-index: 1;
+    padding: 0.5rem;
+    border-bottom: 0.12rem solid white;
+
+}
+
+.logo {
+    padding-left: 1rem;
+}
+
+#header .logo i {
+    color: #8D2A2A;
+    font-family: "Kalam", cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+    top: .5rem;
+}
+
+#header .logo a {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #8D2A2A;
+    font-family: "Kalam", cursive;
+    position: relative;
+    top: .3rem;
+    text-decoration: none;
+}
+
+#menu0-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu2-1 {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.button0-1 {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.button0-1:hover {
+    color: #8D2A2A;
+}
+
+.dropdown {
+    top: 4.5rem;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown a {
+    color: white;
+    padding-top: .7rem;
+    padding-left: 3rem;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3rem;
+}
+
+.dropdown a:hover {
+    color: #8D2A2A;
+}
+
+.dropdown:hover {
+    background: rgba(10, 10, 10, 0.89);
+}
+
+.button0-1:hover .dropdown {
+    display: block;
+}
+
+.log-in {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: .5rem 1.5rem;
+    background-color: transparent;
+    color: #fcf7f7;
+    border-radius: 1rem;
+    border: .2rem solid #c0bcbc;
+    transition: 0.2s;
+}
+
+.log-in:hover {
+    background-color: #8D2A2A;
+    color: white;
+}
+  /* ===================================================== */
+  #div0-1 {
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 45rem; 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.781)), url('imgs/Automation_Projects_img1.jpg'), no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'roboto';
+}
+
+.div1-1 {
+    
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    padding-left: 435px;
+    bottom: 30px;
+    font-size: 2rem;
+   
+    
+}
+
+.p1-1 {
+    text-align: center;
+   padding-left: 1px;
+   padding-bottom:14rem ;
+    font-size: 2rem;
+    /* word-spacing: 0.5px; */
+       
+}
+
+#div1-1 h1 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.p1-1 a {
+    text-decoration: none;
+    font-family: "Kalam", cursive;
+    color: #8D2A2A;
+    font-weight: bold;
+  
+  }
+
+#button1-1 {
+   
+    border-radius: .7rem;
+    background-color: transparent;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    border: .2rem solid #09ef37;
+    position: absolute;
+    top:43rem;
+    left: 75rem;
+     /* transform: translate(-50%, -50%);  */
+    cursor: pointer; 
+   
+}
+
+#button1-1:hover{
+    background: rgb(37, 37, 37);
+    
+}
+/* =========================================== */
+  
+#div0-2 {
+    background-color: #192C4D;
+    padding: 3rem;
+    padding-bottom: 4rem;
+    font-family: 'roboto';
+}
+
+.p1-2 {
+    color: #b4d6f4;
+    font-size: 2.3rem;
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+.div1-2 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+}
+
+.div1-2 a {
+    width: 15rem;
+    text-align: center;
+    text-decoration: none;
+    color: #9ccaf1;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    margin: 1rem;
+    border: #9ccaf1 0.1rem solid;
+    border-radius: 0.63rem;
+    transition: transform 0.2s ease-in-out;
+}
+.div1-2 a:hover {
+    transform: translateY(-5px);
+  }
+  /* ================================================================================== */
+  #div0-3 {
+    background: rgb(37, 37, 37);
+    padding: 3rem;
+    padding-bottom: 4rem;
+    font-family: 'roboto';
+}
+
+.p1-3 {
+    color: white;
+    font-size: 4rem;
+    padding-left: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.div1-3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+.contener1-3 ,.contener2-3,.contener3-3,.contener4-3,.contener5-3,.contener6-3{
+    flex: 1;
+    margin: 1rem;
+    border: #4deb7c 0.3rem solid;
+    height: 13rem;
+    border-radius: 0.63rem;
+    transition:  0.4s ease;
+}
+
+.div1-3 .p0 {
+   
+    text-align: center;
+    vertical-align:middle;
+    padding-top: 7%;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    
+}
+.p1{
+    display: none;
+    margin: 30px;
+    color: aliceblue;
+    
+    }
+
+    .contener1-3:hover, .contener2-3:hover, .contener3-3:hover, .contener4-3:hover, .contener5-3:hover, .contener6-3:hover {
+        flex: 2;
+        height: 25rem;
+        border: black 0.3rem solid;
+    }
+
+    .contener1-3:hover .p1, .contener2-3:hover .p1, .contener3-3:hover .p1, .contener4-3:hover .p1, .contener5-3:hover .p1, .contener6-3:hover .p1 {
+        display: block;
+    }
+/* ==================================================*/
+#div0-4 {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(37, 37, 37);
+    padding-bottom: 5rem;
+    font-family: 'roboto';
+
+}
+
+.div1-4 {
+    overflow: hidden;
+    position: relative;
+    padding-left: 0rem;
+    padding-right: 5rem;
+}
+
+.div1-4 img {
+    flex: 1;
+    text-align: center;
+    height: auto;
+    width: 83%;
+     max-width: 40rem; 
+     filter: brightness(0.3); 
+    display: block;
+    border-radius: .5rem;
+}
+
+.div1-4 button {
+
+    background-color: transparent;
+    font-weight: bold;
+    position: absolute;
+    font-size: 1.5rem;
+    top: 27rem;
+    padding-bottom: 10rem;
+    left: 18rem;
+    transform: translate(-50%, -50%);
+    border: .1rem solid rgb(106, 213, 106);
+    color: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.div1-4 button:hover {
+    background-color: rgb(77, 140, 77);
+}
+
+.div2-4 {
+    flex: 2;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+
+    padding-right: 10rem;
+    padding-top: 20rem;
+
+    text-align: center;
+}
+  /* ============================================ */
+
+  #footer {
+    font-family: "roboto";
+    background-color: #0c0c0c;
+}
+
+#div0-f {
+    padding: 2rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#div1-f {
+    font-family: "Kalam", cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50;
+    color: #8D2A2A;
+    text-shadow: 0rem 4rem 4rem rgba(0, 0, 0, 0.25);
+}
+
+
+#div2-f a,
+#div4-f a {
+    text-decoration: none;
+}
+
+#div2-f,
+#div3-f,
+#div4-f,
+footer a {
+    color: aliceblue;
+
+}
+
+ul {
+    list-style: none;
+    line-height: 1.7rem;
+}
+
+.footerDivs {
+    direction: rtl;
+    text-align: left;
+    font-size: 19px;
+    margin: 1rem 2rem;
+    white-space: nowrap;
+
+}
+
+#div5-f {
+    margin-top: 1rem;
+    margin-left: 4rem;
+
+}
+
+#div6-f {
+    padding-left: 0.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    color: aliceblue;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.BAU-image {
+    width: 7rem;
+    height: auto;
+    border-radius: 1rem;
+}

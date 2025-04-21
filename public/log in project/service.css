@@ -1,0 +1,230 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+/* ============================================ */
+#header {
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #0c0c0c;
+  position: sticky;
+  top: 0;
+  left: 0;
+  border-top: 0;
+  z-index: 1;
+  padding: 8px; 
+  border-bottom: 1.92px solid white; 
+}
+
+.logo {
+  padding-left: 16px; 
+}
+
+#header .logo i {
+  color: #8D2A2A;
+  font-family: "Kalam", cursive;
+  font-size: 48px; 
+  font-weight: bold;
+}
+
+#header .logo a {
+  font-size: 40px; 
+  font-weight: bold;
+  color: #8D2A2A;
+  font-family: "Kalam", cursive;
+  text-decoration: none;
+}
+
+#menu0-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu2-1 {
+  display: inline-block;
+  margin-right: 16px; 
+}
+
+.button0-1 {
+  color: white;
+  font-size: 24px; 
+  padding: 16px 24px; 
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.button0-1:hover {
+  color: #8D2A2A;
+}
+
+.dropdown {
+  top: 72px; 
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: black;
+}
+
+.dropdown a {
+  color: white;
+  padding-top: 11.2px; 
+  padding-left: 48px; 
+  text-decoration: none;
+  display: block;
+  font-size: 20.8px; 
+  background: rgba(10, 10, 10, 0.911);
+}
+
+.dropdown a:hover {
+  color: #8D2A2A;
+}
+
+
+.button0-1:hover .dropdown {
+  display: block;
+}
+
+.log-in {
+  font-weight: bold;
+  font-size: 24px; 
+  padding: 8px 24px; 
+  background-color: transparent;
+  color: #fcf7f7;
+  border-radius: 16px; 
+  border: 3.2px solid #c0bcbc; 
+  transition: 0.2s;
+}
+
+.log-in:hover {
+  background-color: #8D2A2A;
+  color: white;
+}
+
+/* ======================================================= */
+
+#div0-1{
+  background:url('imgs/term-1.jpg.jpeg'), no-repeat;
+  height: 500px;
+  width: auto;
+  background-size: cover;
+  background-position: center;
+
+}
+/* ========================================== */
+#terms {
+  color: #191919;
+  display: flex;
+  flex-direction: column;
+  padding: 16px; /* 1rem إلى 16px */
+  background-color: #191919;
+}
+
+.service {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  flex-wrap: wrap;
+  align-items: center; 
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.service1 {
+  height: 560px; 
+  width: 350px; 
+  font-size: 24px;
+  color: white; 
+  /* margin: 35px; */
+  position: absolute;
+  right: 90px;
+  /* top: 900px; */
+}
+
+.img img {
+  height: 480px; 
+  width: auto;
+  margin-left: 170px; 
+}
+
+
+  /* ============================================== */
+  
+#footer {
+  background-color: #0c0c0c;
+}
+#div0-f {
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+#div1-f {
+  font-family: "Kalam", cursive;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50;
+  color: #8D2A2A;
+  text-shadow: 0rem 4rem 4rem rgba(0, 0, 0, 0.25);
+}
+
+
+#div2-f a,
+#div4-f a {
+  text-decoration: none;
+}
+
+#div2-f,
+#div3-f,
+#div4-f,
+footer a {
+  color: aliceblue;
+
+}
+
+ul {
+  list-style: none;
+  line-height: 1.7rem;
+}
+
+.footerDivs {
+  direction: rtl;
+  text-align: left;
+  font-size: 18px;
+  margin: 1rem 2rem;
+  white-space: nowrap;
+
+}
+
+#div5-f {
+  margin-top: 1rem;
+  margin-left: 4rem;
+
+}
+
+#div6-f {
+  padding-left: 0.5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  color: aliceblue;
+  font-size: larger;
+  display: flex;
+  justify-content: space-between;
+}
+
+.BAU-image {
+  width: 7rem;
+  height: auto;
+  border-radius: 1rem;
+}
+
+
+
+

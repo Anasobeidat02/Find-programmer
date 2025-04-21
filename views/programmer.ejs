@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>programmer</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="/log in project/Programmer.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <i> FP </i>
+            <a href="/">Find.programmer </a>
+        </div>
+        <div id="menu0-1">
+            <ul class="menu1-1">
+                <li class="menu2-1">
+                    <button class="button0-1" onclick="toggleDropdown(this)">you are </button>
+                    <div class="dropdown">
+                        <a href="/signUp/company">company </a>
+                        
+                        <a href="/signUp/clientIndividual"> Individual </a>
+                    </div>
+                </li>
+                <li class="menu2-1">
+                    <button class="button0-1" onclick="toggleDropdown(this)">your project</button>
+                    <div class="dropdown">
+                        <a href="/WebsiteDevelopment">Website development</a>
+                        <a href="/VideoGameDevelopment">Video game development</a>
+                        <a href="/EducationalTools">Educational tools</a>
+                        <a href="/ChatBots">ChatBots</a>
+                        <a href="/CommunityProject">Community project</a>
+                        <a href="/MobileAppDevelopment">Mobile app development</a>
+
+                    </div>
+                </li>
+            </ul>
+            <button class="log-in"> Join </button>
+        </div>
+    </header>
+
+    <!-- ======================================================-  -->
+    <div id="div0-1">
+        <div class="div1-1">
+
+            <h1>So glad to have your joining to <a href=""> FP</a>!</h1>
+            
+
+        </div>
+        
+        <div class="div2-1">
+            <form class="signup-programer" action="/signUp/programmer" method="post" enctype="multipart/form-data">
+                <div class="form1">
+                    <div class="form-group">
+                        <label for="name">First Name</label>
+                        <input type="text" id="name" name="name" style="color: #fff;">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" style="color: #fff;">
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="email" id="Email" name="email" style="color: #fff;"> 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" style="color: #fff;">
+                    </div>
+                    <div class="form-group">
+                        <div onclick="submitForm('profilePicture')" style="color: #fff;">Upload Profile Picture</div>
+                        <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+                    </div>
+                    <div class="form-group">
+                        <div onclick="submitForm('certifications')" style="color: #fff;">Upload Certifications</div>
+                        <input type="file" id="certifications" name="certifications" accept=".pdf,.doc,.docx" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="note" name="note" placeholder="Your nice note here"  style="color: #fff;"> 
+                    </div>
+                </div>
+                
+                
+                <div class="div3-1">
+                    <button class="button1">Sign Up</button>
+                    <select class="dropdown1" name="programmerType" id="programmerType" onchange="updateDropdownTitle()">
+                        <option value="" disabled selected>Choose Your Major</option>
+                        <option value="backend">Backend Programmers</option>
+                        <option value="chatbots">Chatbots Programmers</option>
+                        <option value="educational">Educational Programmers</option>
+                        <option value="mobile">Mobile App Programmers</option>
+                        <option value="uiux">UiUx Designers</option>
+                        <option value="videoGames">Video Games Programmers</option>
+                        <option value="web">Web Programmers</option>
+                        <option value="api">API</option>
+                        <option value="maintenance">Maintenance</option>
+                        <option value="problemSolver">Problem Solver</option>
+                       
+                        <option value="machineLearning">Machine Learning</option>
+                        <option value="databaseManagers">Database Managers</option>
+                        <option value="qualityAssurance">Quality Assurance</option>
+                        <option value="softwareDevelopers">Software Developers</option>
+                        <option value="securitySpecialist">Security Specialist</option>
+                        <option value="appFunctionalDevelopers">App Functional Developers</option>
+                    </select>
+                    
+                </div>
+                <div id="programmer-error-messages" style="color: red; font-size: 0.7rem;"></div>
+            </form>
+            
+        </div>
+    </div>
+    <!-- ================================================ -->
+    <div id="div0-2">
+        <p class="p1-2">Available Projects</p>
+        <div class="div1-2">
+            <p>websites</p>
+            <p>Mobile App</p>
+            <p>Al projects</p>
+            <p>More & more</p>
+        </div>
+
+    </div>
+    <!--  ===================================================================================== -->
+
+    <div id="div0-3">
+
+        <div class="game">
+            <h1>Why Join Us?</h1>
+            <p> &emsp; &check; Making best team ever</p>
+            <p> &emsp; &check; Develop skills & abilities</p>
+            <p> &emsp; &check; support your knowledge </p>
+            <p> &emsp; &check; Making money with deals </p>
+            <p> &emsp; &check; More projects to your CV </p>
+
+        </div>
+
+        <div class="img">
+            <img src="/log in project/imgs/Programmer Imgs/2.jpg" />
+
+        </div>
+
+
+    </div>
+    <!-- ============================== -->
+    <div id="div0-4">
+        <div>
+            <h1 class="div1-4">Suddenly it's all so doable.</h1>
+            <div class="img">
+                <img src="/log in project/imgs/Programmer Imgs/3.png">
+            </div>
+        </div>
+    </div>
+
+
+    <!--  ++++ -->
+    <div class="line">
+        <br>
+        <br><br><br>
+
+    </div>
+    <!--  =================================================================================================== -->
+    <footer id="footer">
+        <div id="div0-f">
+            <div id="div1-f" class="footerDivs">
+                <h1>
+                    FP <br>
+                    Find.Programmer
+                </h1>
+            </div>
+            <div id=div2-f class="footerDivs">
+                <ul>
+                    <li>
+                        Group BAU
+                    </li>
+                    <br>
+                    <li>
+                        <a href="">About us</a>
+                    </li>
+                    <li>
+                        <a href="">Terms of services</a>
+                    </li>
+                    <li>
+                        <a href="">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div id=div3-f class="footerDivs">
+                <ul>
+                    <li>
+                        Follow us
+                    </li>
+                    <br>
+                    <li>
+                        <a href="">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="div4-f" class="footerDivs">
+                <ul>
+                    <li>contact us</li>
+                    <br>
+                    <li><a href="">mohammad.38002@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div id="div5-f">
+            <img src="/log in project/imgs/Programmer Imgs/BAU.jpg" alt="BAU" class="BAU-image">
+        </div>
+        <div id="div6-f">
+            <div class="start">From BAU</div>
+            <div class="end">Made with . in BAU @2024 FP... </div>
+        </div>
+        <br> <br>
+
+    </footer>
+     <!-- ربط ملف جافا سكريبت -->
+     <script>
+        function updateDropdownTitle() {
+            var dropdown = document.getElementById("programmerType");
+            dropdown.options[0].text = dropdown.options[dropdown.selectedIndex].text;
+        }
+    </script>
+     <script src="/log in project/script.js"></script>
+     <script src="/log in project/major.js"></script>
+
+</body>
+
+</html>

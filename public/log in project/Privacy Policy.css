@@ -1,0 +1,220 @@
+#header {
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #0c0c0c;
+  position: sticky;
+  top: 0;
+  left: 0;
+  border-top: 0;
+  z-index: 1;
+  padding: 8px; 
+  border-bottom: 1.92px solid white; 
+}
+
+.logo {
+  padding-left: 16px; 
+}
+
+#header .logo i {
+  color: #8D2A2A;
+  font-family: "Kalam", cursive;
+  font-size: 48px; 
+  font-weight: bold;
+}
+
+#header .logo a {
+  font-size: 40px; 
+  font-weight: bold;
+  color: #8D2A2A;
+  font-family: "Kalam", cursive;
+  text-decoration: none;
+}
+
+#menu0-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu2-1 {
+  display: inline-block;
+  margin-right: 16px; 
+}
+
+.button0-1 {
+  color: white;
+  font-size: 24px; 
+  padding: 16px 24px; 
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.button0-1:hover {
+  color: #8D2A2A;
+}
+
+.dropdown {
+  top: 72px; 
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  background-color: black;
+}
+
+.dropdown a {
+  color: white;
+  padding-top: 11.2px; 
+  padding-left: 48px; 
+  text-decoration: none;
+  display: block;
+  font-size: 20.8px; 
+  background: rgba(10, 10, 10, 0.911);
+}
+
+.dropdown a:hover {
+  color: #8D2A2A;
+}
+
+
+.button0-1:hover .dropdown {
+  display: block;
+}
+
+.log-in {
+  font-weight: bold;
+  font-size: 24px; 
+  padding: 8px 24px; 
+  background-color: transparent;
+  color: #fcf7f7;
+  border-radius: 16px; 
+  border: 3.2px solid #c0bcbc; 
+  transition: 0.2s;
+}
+
+.log-in:hover {
+  background-color: #8D2A2A;
+  color: white;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #191919;
+    color: #fcf7f7;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .last-updated {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+
+   ul li a{
+    color: rgb(137, 247, 247);
+    text-decoration: none;
+  }
+
+  h1{
+    font-size: 70px;
+  }
+  .img img{
+    
+  }
+  
+#footer {
+  background-color: #0c0c0c;
+}
+#div0-f {
+  margin: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+#div1-f {
+  font-family: "Kalam", cursive;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50;
+  color: #8D2A2A;
+  text-shadow: 0rem 4rem 4rem rgba(0, 0, 0, 0.25);
+}
+
+
+#div2-f a,
+#div4-f a {
+  text-decoration: none;
+}
+
+#div2-f,
+#div3-f,
+#div4-f,
+footer a {
+  color: aliceblue;
+
+}
+
+ul {
+  list-style: none;
+  line-height: 1.7rem;
+}
+
+.footerDivs {
+  direction: rtl;
+  text-align: left;
+  font-size: 18px;
+  margin: 1rem 2rem;
+  white-space: nowrap;
+
+}
+
+#div5-f {
+  margin-top: 1rem;
+  margin-left: 4rem;
+
+}
+
+#div6-f {
+  padding-left: 0.5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  color: aliceblue;
+  font-size: larger;
+  display: flex;
+  justify-content: space-between;
+}
+
+.BAU-image {
+  width: 7rem;
+  height: auto;
+  border-radius: 1rem;
+}
+
+

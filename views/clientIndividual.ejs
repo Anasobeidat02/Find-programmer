@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/log in project/login3.css">
+    <title>clientIndividual</title>
+</head>
+<body>
+    <section class="home">
+        <div class="signUp is-hidden"> <!-- قسم "sign up" المخفي -->
+            <form class="signup-form" id="signUpForm">
+                <div class="left"> <!-- القسم الأيسر للمدخلات -->
+                    <h2 class="title" style="color:rgb(255, 255, 255);">Sign Up</h2>
+                    <label for="First">First Name
+                        <input type="text" id="First" name="firstName">
+                    </label>
+                    <label for="Last">Last Name
+                        <input type="text" id="Last" name="lastName">
+                    </label>
+                    <label for="Age">Your birthday
+                        <input type="date" id="Age" name="age">
+                    </label>
+                    <label for="Email">Email
+                        <input type="email" id="Email" name="email">
+                    </label>
+                    <label for="Password">Password
+                        <input type="password" id="Password" name="password">
+                    </label>
+                </div>
+                <div class="image-container"> <!-- حاوية الصورة -->
+                    <img src="/log in project/imgs/img2.jpg" alt="Profile Picture">
+                    <button type="submit">Sign Up</button> <!-- زر في وسط الصورة -->
+                </div>
+            </form>
+            <div id="client-error-messages" style="color: red;"></div>
+        </div>
+    </section>
+    <script src="/log in project/script.js"></script>
+
+</body>
+</html>

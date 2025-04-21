@@ -1,0 +1,365 @@
+* {
+
+    padding: 0;
+    margin: 0;
+}
+
+/*========================================================================*/
+#header {
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #0c0c0c;
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-top: 0;
+    z-index: 1;
+    padding: 8px; 
+    border-bottom: 1.92px solid white; 
+}
+
+.logo {
+    padding-left: 16px; 
+}
+
+#header .logo i {
+    color: #8D2A2A;
+    font-family: "Kalam", cursive;
+    font-size: 48px; 
+    font-weight: bold;
+}
+
+#header .logo a {
+    font-size: 40px; 
+    font-weight: bold;
+    color: #8D2A2A;
+    font-family: "Kalam", cursive;
+    text-decoration: none;
+}
+
+#menu0-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu2-1 {
+    display: inline-block;
+    margin-right: 16px; 
+}
+
+.button0-1 {
+    color: white;
+    font-size: 24px; 
+    padding: 16px 24px; 
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.button0-1:hover {
+    color: #8D2A2A;
+}
+
+.dropdown {
+    top: 72px; 
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background-color: black;
+}
+
+.dropdown a {
+    color: white;
+    padding-top: 11.2px; 
+    padding-left: 48px; 
+    text-decoration: none;
+    display: block;
+    font-size: 20.8px; 
+    background: rgba(10, 10, 10, 0.911);
+}
+
+.dropdown a:hover {
+    color: #8D2A2A;
+}
+
+
+.button0-1:hover .dropdown {
+    display: block;
+}
+
+.log-in {
+    font-weight: bold;
+    font-size: 24px; 
+    padding: 8px 24px; 
+    background-color: transparent;
+    color: #fcf7f7;
+    border-radius: 16px; 
+    border: 3.2px solid #c0bcbc; 
+    transition: 0.2s;
+}
+
+.log-in:hover {
+    background-color: #8D2A2A;
+    color: white;
+}
+
+/* ============================================================ */
+#div0-1 {
+    font-family: "roboto";
+    background: rgb(37, 37, 37);
+    height: 800px;
+}
+
+#div0-1 h1 {
+    color: white;
+    font-size: 64px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 80px; 
+}
+
+#div0-1 h1 a {
+    font-family: "Kalam";
+    text-decoration: none;
+    color: #8D2A2A;
+}
+
+.div1-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.div1-1 img {
+    width: 450px;
+    height: 400px;
+    position: relative;
+    top: 176px; 
+    left: 96px; 
+    filter: brightness(0.4);
+}
+
+.div1-1 p {
+    position: relative;
+    top: 250px; 
+    left: 200px; 
+    width: 650px;
+    color: white;
+    font-size: 27.2px; 
+}
+
+/* ======================================================= */
+#div0-2 {
+    font-family: "roboto";
+    background: rgb(37, 37, 37);
+    height: 590px;
+}
+
+#div0-2 h4 {
+    color: white;
+    font-size: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: -54.4px; 
+}
+
+.div3-2 {
+    background-image: linear-gradient(to bottom, rgba(2, 2, 2, 0.938), rgba(0, 0, 0, 0.774)), url('imgs/more details-amg-2.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 400px;
+    width: 95%;
+    position: absolute;
+    left: 34px; 
+    right: 54px;
+}
+
+.div3-2 p {
+    padding-right: 352px; 
+    color: white;
+    font-size: 28.8px; 
+    text-align: left;
+    position: absolute;
+    top: 96px; 
+    left: 32px; 
+}
+
+.button0-2 {
+    border-radius: 8px; 
+    background-color: transparent;
+    padding: 11.2px; 
+    font-size: 24px; 
+    cursor: pointer;
+    color: white;
+    border: 1.6px solid #5ccbec; 
+    position: absolute;
+    top: 240px; 
+    right: 96px; 
+    transform: translate(-50%, -50%);
+}
+
+.button0-2:hover {
+    background-color: #0056b3;
+}
+
+/* ========================================================== */
+#div0-3 {
+    font-family: "roboto";
+    background: rgb(37, 37, 37);
+}
+
+#div0-3 h3 {
+    color: white;
+    font-size: 48px; 
+    position:absolute;
+    left: 32px;
+}
+
+#div0-3 a {
+    font-family: "Kalam";
+    color: #8D2A2A;
+    position: relative;
+    left: 32px;
+    bottom: -45px; 
+    font-size: 48px; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ========================================================== */
+
+#div0-4 {   
+ background: rgb(37, 37, 37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.div1-4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse; /* This will place the image on the right */
+    display: none;
+    transition: opacity 0.5s ease;
+    width: 100%; /* Ensure each item takes the full width */
+    max-width: 1200px; /* Optional: Set a max width to control the layout on larger screens */
+    margin: 10px 0; /* Optional: Add some margin between items */
+}
+
+.div1-4.active {
+    display: flex; /* Changed from block to flex to maintain the layout */
+    opacity: 1;
+}
+
+.div1-4 img {
+    width: 450px; /* Adjust the width as needed */
+    height: 450px;
+    object-fit: cover;
+    margin-left: 20px; /* Space between the image and the text */
+}
+.div1-4 span{
+    font-size: 33px;
+    color: white;
+    cursor: pointer;
+
+}
+.div1-4 .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+    color: white;
+    padding-left: 80px;
+}
+.text-content h3{
+    font-size: 40px;
+}
+.text-content p{
+    font-size: 25px;
+    color: #0997c2;
+    font-family: sans-serif;
+
+}
+
+/* =========================================================== */
+#footer {
+    background-color: #0c0c0c;
+}
+
+#div0-f {
+    padding: 32px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#div1-f {
+    font-family: "Kalam", cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #8D2A2A;
+    text-shadow: 0px 64px 64px rgba(0, 0, 0, 0.25);
+}
+
+#div2-f a,
+#div4-f a {
+    text-decoration: none;
+}
+
+#div2-f,
+#div3-f,
+#div4-f,
+footer a {
+    color: aliceblue;
+}
+
+ul {
+    list-style: none;
+    line-height: 27.2px; 
+}
+
+.footerDivs {
+    direction: rtl;
+    text-align: left;
+    font-size: 18px;
+    margin: 16px 32px; 
+    white-space: nowrap;
+}
+
+#div5-f {
+    margin-top: 16px; 
+    margin-left: 64px; 
+}
+
+#div6-f {
+    padding-left: 8px; 
+    margin-left: 64px; 
+    margin-right: 64px; 
+    color: aliceblue;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+}
+
+.BAU-image {
+    width: 112px; 
+    height: auto;
+    border-radius: 16px; 
+}

@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" = "IE=edge">
+    <title>User</title>
+    <link rel="stylesheet" href="/log in project/User.CSS">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+         h2 {
+            color: #333;
+        }
+        .sidebar {
+            width: 300px;
+            background-color: #f4f4f4;
+            border-left: 1px solid #ccc;
+            position: fixed;
+            top: 60px;
+            right: -300px;
+            height: calc(100% - 60px);
+            transition: right 0.3s ease;
+            overflow-y: auto;
+        }
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #0c0c0c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        button:hover {
+            background-color: #8D2A2A;
+        }
+        #messagesContainer {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 20px;
+            height: 200px;
+            overflow-y: scroll;
+        }
+        #messageInput {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-top: 10px;
+        }
+        #header {
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            background: #0c0c0c;
+            position: sticky;
+            top: 0;
+            left: 0;
+            border-top: 0;
+            z-index: 1;
+            padding: 0.5rem;
+            border-bottom: 0.12rem solid white;
+        }
+        .logo {
+            padding-left: 1rem;
+        }
+        #header .logo i {
+            color: #8D2A2A;
+            font-family: "Kalam", cursive;
+            font-size: 3rem;
+            font-weight: bold;
+            position: relative;
+            top: .5rem;
+        }
+        #header .logo a {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #8D2A2A;
+            font-family: "Kalam", cursive;
+            position: relative;
+            top: .3rem;
+            text-decoration: none;
+        }
+        #menu0-1 {
+            display: flex;
+            align-items: center;
+        }
+        #menu0-1 button {
+            margin-left: 10px;
+        }
+        .sidebar.active {
+            right: 0;
+        }
+    </style>
+    <script src="https://js.stripe.com/v3/"></script>
+
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+          <a href="/"> FP Find.programmer </a>
+        </div>
+        <div id="menu0-1">
+            <button id="notificationButton">Notification</button>
+            <button id="messagesButton">Messages</button>
+            <button id="dealsButton">Deals</button>
+            <button id="paymentButton">Payment</button>
+            <button id="logoutButton">Logout</button>
+        </div>
+    </header>
+    
+    <div class="content">
+        
+        <div id="notifications" class="sidebar">
+            <h2>Notifications</h2>
+            <div id="notificationsContainer"></div>
+        </div>
+        <div id="messagesSidebar" class="sidebar">
+            <h2>Messages</h2>
+            <div id="messagesContainer"></div>
+            <input type="text" id="messageInput" placeholder="Type a message...">
+            <button id="sendMessageButton">Send</button>
+        </div>
+        <div id="dealsSidebar" class="sidebar">
+            <h2>Deals</h2>
+            <p>Deals content goes here.</p>
+        </div>
+        <div id="paymentSidebar" class="sidebar">
+            <h2>Payment</h2>
+            <p>Payment content goes here.</p>
+        </div>
+        <div id="logoutSidebar" class="sidebar">
+            <h2>Logout</h2>
+            <button id="confirmLogoutButton">Logout</button>
+        </div>
+    </div>
+    <!-- ================================================= -->
+    <div id="div0-1">
+        <p id="welcomeMessage">Nice to see you, (The user who signed in)</p>
+    </div>
+    <!-- ========================================= -->
+    <div id="div0-2">
+        <div class="div1-2">
+            <p>
+                Take a look to deal with most popular <br> programmers in <a class="a1-2" href="/">FP </a>
+            </p>
+        </div>
+        <div class="div2-2">
+            <img src="/log in project/imgs/User joined-1.jpg" alt="">
+        </div>
+    </div>
+    <!-- ========================================= -->
+    <div id="div0-3">
+        <!--cards-1 -->
+
+        <div class="card">
+            <div class="image">
+                <img src="">
+            </div>
+            <div class="title">
+                <h1>Mohammad Mousa</h1>
+            </div>
+            <div class="des">
+                <p class="p-0">I will do my best to do
+                    your idea project...</p>
+                <p> &#11088; 5.0 (200 Projects)</p>
+                <p class="p-1">5000$ </p>
+                </p>
+            </div>
+        </div>
+        <!--cards-2 -->
+
+        <div class="card">
+            <div class="image">
+                <img src="">
+            </div>
+            <div class="title">
+                <h1> Shayma’a Nawafleh </h1>
+            </div>
+            <div class="des">
+                <p class="p-0">I will create your idea
+                    with perfect ...</p>
+                <p>&#11088; 5.0 (180 Projects)</p>
+                <p class="p-1"> From 4699$</p>
+                </p>
+            </div>
+        </div>
+        <!--cards 3-->
+
+        <div class="card">
+
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="title">
+                <h1>Anas Malek Obaidat </h1>
+            </div>
+            <div class="des">
+                <p class="p-0">I will create your idea
+                    with perfect ...</p>
+                <p>&#11088;5.0 (202 Projects)</p>
+                <p class="p-1">From 4550$ </p>
+
+                </p>
+            </div>
+        </div>
+
+     </div>   
+     <div id="div0-3">
+
+        <!--cards-4 -->
+
+        <div class="card">
+
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="title">
+                <h1>Rama Musab hourani
+                </h1>
+            </div>
+            <div class="des">
+                <p class="p-0">In a short time, you will
+                    find your project ready ...</p>
+                <p> &#11088; o.5 (166 Projects)</p>
+                <p class="p-1">Form 4444$</p>
+                </p>
+            </div>
+        </div>
+        <!--cards-5 -->
+
+
+        <div class="card">
+
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="title">
+                <h1>Mohammad Melhem
+                </h1>
+            </div>
+            <div class="des">
+                <p class="p-0">I will design your project
+                    with best graphics ...</p>
+                <p>&#11088; 0.5 (157 Projects)</p>
+                <p class="p-1">From 4430$</p>
+                </p>
+            </div>
+        </div>
+        <!--cards-6 -->
+
+
+        <div class="card">
+
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="title">
+                <h1>Haya Alsaleh </h1>
+            </div>
+            <div class="des">
+                <p class="p-0">I will make your project
+                    most popular by ...</p>
+                <p> &#11088; 0.5 (157 Projects)</p>
+                <p class="p-1">From 4430$ </p>
+                </p>
+            </div>
+        </div>
+        </div>
+        <div id="div0-3">
+
+        <!--cards-7 -->
+
+
+        <div class="card">
+
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="title">
+                <h1>khaled abdullah
+                </h1>
+            </div>
+            <div class="des">
+                <p class="p-0">I have an excellent
+                    experience of building ...</p>
+                <p>&#11088;8.4 (199 Projects)</p>
+                <p class="p-1">From 4543$</p>
+                </p>
+            </div>
+        </div>
+
+        <!--cards-8 -->
+
+
+        <div class="card">
+
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="title">
+                <h1>mohammad barakat </h1>
+            </div>
+            <div class="des">
+                <p class="p-0">Make sure to be
+                    comfortable with me ... </p>
+                <p>&#11088;4.7 (172 Projects)</p>
+                <p class="p-1">From 4543$</p>
+                </p>
+            </div>
+        </div>
+        <!--cards-9 -->
+
+        <div class="card">
+
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="title">
+                <h1>maisa’a majd thabet
+                </h1>
+            </div>
+            <div class="des">
+                <p class="p-0">If you’re looking for a
+                    good deal give it try to ....</p>
+                <p>&#11088;4.4 (177 Projects)</p>
+                <p class="p-1"> From 4340$</p>
+                </p>
+            </div>
+        </div>
+        </div>
+        <div id="div0-3">
+
+        <!--cards-10 -->
+
+        <div class="card">
+
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="title">
+                <h1>yazan mohammad
+                </h1>
+            </div>
+            <div class="des">
+                <p class="p-0">Take a look to my projects
+                    I’ll be able to make ...</p>
+                <p> &#11088; 4.0 (199 Projects)</p>
+                <p class="p-1">From 4040$</p>
+                </p>
+
+            </div>
+        </div>
+        <!--cards-11 -->
+
+
+        <div class="card">
+
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="title">
+                <h1>ibrahim ahmad
+                </h1>
+            </div>
+            <div class="des">
+                <p class="p-0">A lot of things me and my
+                    team can do to make ....</p>
+                <p>&#11088;3.8 (199 Projects)</p>
+                <p class="p-1">From 3030$</p>
+                </p>
+            </div>
+        </div>
+        <!--cards-12 -->
+
+
+        <div class="card">
+
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="title">
+                <h1>abdullah sami </h1>
+            </div>
+            <div class="des">
+                <p class="p-0">A lot of things me and my
+                    team can do to make ...</p>
+                <p>&#11088;3.5 (199 Projects)</p>
+                <p class="p-1">From 3995$</p>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- =========================================== -->
+    <div id="div0-4">
+
+        <div class="card0-4">
+            <div class="title0-4">
+                <p>Most popular programmers <br>in Educational tools </p>
+            </div>
+            <div class="image0-4">
+                <img src="/log in project/imgs/User joined-2.jpg" alt="">
+            </div>
+            <div class="button0-4">
+                <button>Visit</button>
+
+            </div>
+
+        </div>
+        <div class="card0-4">
+            <div class="title0-4">
+                <p>Most popular programmers<br> in Video games </p>
+            </div>
+            <div class="image0-4">
+                <img src="/log in project/imgs/User joined-3.jpg" alt="">
+            </div>
+            <div class="button0-4">
+                <button>Visit</button>
+            </div>
+        </div>
+        <div class="card0-4">
+            <div class="title0-4">
+                <p> Most popular programmers<br> in websites</p>
+            </div>
+            <div class="image0-4">
+                <img src="/log in project/imgs/User joined-4.jpg" alt="">
+            </div>
+            <div class="button0-4">
+                <button>Visit</button>
+
+            </div>
+
+        </div>
+        <div class="card0-4">
+            <div class="title0-4">
+                <p> Most popular programmers <br>in Mobile Apps</p>
+            </div>
+            <div class="image0-4">
+                <img src="/log in project/imgs/User joined-5.jpg" alt="">
+            </div>
+            <div class="button0-4">
+                <button>Visit</button>
+            </div>
+        </div>
+        <div class="card0-4">
+            <div class="title0-4">
+                <p> Most popular programmers <br>in AL</p>
+            </div>
+            <div class="image0-4">
+                <img src="/log in project/imgs/User joined-6.jpg" alt="">
+            </div>
+            <div class="button0-4">
+                <button>Visit</button>
+            </div>
+        </div>
+    </div>
+    <!--================================= -->
+    <div class="div0-5">
+<div class="div2-5">
+    <img id="backbut"src="/log in project/imgs/user joined-11.jpg" alt="">
+</div>
+<div class="div1-5">
+    <span><img src="/log in project/imgs/User joined-7.jpg" alt="" srcset=""></span>
+</div>
+<div class="div1-5">
+    <span><img src="/log in project/imgs/User joined-8.jpg" alt="" srcset=""></span>
+</div>
+<div class="div1-5">
+    <span><img src="/log in project/imgs/User joined-9.jpg" alt="" srcset=""></span>
+</div>
+<div class="div1-5">
+    <span><img src="/log in project/imgs/User joined-10.jpg" alt="" srcset=""></span>
+</div>
+    <img id="nextbut"src="/log in project/imgs/User joined-12.jpg" alt="">
+
+
+
+
+
+    </div>
+    <!-- =============================================== -->
+    <footer id="footer">
+        <div id="div0-f">
+            <div id="div1-f" class="footerDivs">
+                <h1>
+                    FP <br>
+                    Find.Programmer
+                </h1>
+            </div>
+            <div id=div2-f class="footerDivs">
+                <ul>
+                    <li>
+                        Group BAU
+                    </li>
+                    <br>
+                    <li>
+                        <a href="/About">About us</a>
+                    </li>
+                    <li>
+                        <a href="/TermsOfServices">Terms of services</a>
+                    </li>
+                    <li>
+                        <a href="/PrivacyPolicy">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div id=div3-f class="footerDivs">
+                <ul>
+                    <li>
+                        Follow us
+                    </li>
+                    <br>
+                    <li>
+                        <a href="">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="">Instagram</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="div4-f" class="footerDivs">
+                <ul>
+                    <li>contact us</li>
+                    <br>
+                    <li><a href="">mohammad.38002@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div id="div5-f">
+            <img src="/log in project/imgs/BAU.jpg" alt="BAU" class="BAU-image">
+        </div>
+        <div id="div6-f">
+            <div class="start">From BAU</div>
+            <div class="end">Made with . in BAU @2024 FP... </div>
+        </div>
+        <br> <br>
+
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const welcomeMessage = sessionStorage.getItem('welcomeMessage');
+            if (welcomeMessage) {
+                // document.getElementById('welcomeMessage').textContent = welcomeMessage;
+                document.getElementById('welcomeMessage').innerHTML = `Nice to see you, ${welcomeMessage}!`;
+
+            }
+        });
+    </script>
+     <script>
+        const messagesContainer = document.getElementById('messagesContainer');
+        const messageInput = document.getElementById('messageInput');
+        const sendMessageButton = document.getElementById('sendMessageButton');
+        const notificationsSidebar = document.getElementById('notifications');
+        const messagesSidebar = document.getElementById('messagesSidebar');
+        const dealsSidebar = document.getElementById('dealsSidebar');
+        const paymentSidebar = document.getElementById('paymentSidebar');
+        const logoutSidebar = document.getElementById('logoutSidebar');
+        const notificationsContainer = document.getElementById('notificationsContainer');
+    
+        const userId = 'User #1';
+        const programmerId = 'Programmer #1';
+    
+        const socket = new WebSocket('ws://localhost:8080');
+    
+        const sendMessage = () => {
+            const content = messageInput.value;
+            if (content) {
+                const message = { senderId: userId, recipientId: programmerId, content };
+                socket.send(JSON.stringify(message));
+                messageInput.value = '';
+            }
+        };
+    
+        sendMessageButton.addEventListener('click', sendMessage);
+    
+        messageInput.addEventListener('keypress', (event) => {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    
+        socket.onmessage = function(event) {
+            const message = JSON.parse(event.data);
+    
+            if (message.recipientId === userId || message.senderId === userId) {
+                const senderName = message.senderId === userId ? 'me' : message.senderId;
+                messagesContainer.innerHTML += `<p>${senderName}: ${message.content}</p>`;
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            }
+    
+            if (message.recipientId === userId && message.senderId !== userId) {
+                notificationsContainer.innerHTML += `<p>${message.senderId} sent you a message</p>`;
+            }
+        };
+    
+        document.getElementById('notificationButton').addEventListener('click', () => {
+            notificationsSidebar.classList.toggle('active');
+            messagesSidebar.classList.remove('active');
+            dealsSidebar.classList.remove('active');
+            paymentSidebar.classList.remove('active');
+            logoutSidebar.classList.remove('active');
+        });
+    
+        document.getElementById('messagesButton').addEventListener('click', () => {
+            messagesSidebar.classList.toggle('active');
+            notificationsSidebar.classList.remove('active');
+            dealsSidebar.classList.remove('active');
+            paymentSidebar.classList.remove('active');
+            logoutSidebar.classList.remove('active');
+        });
+    
+        document.getElementById('dealsButton').addEventListener('click', () => {
+            dealsSidebar.classList.toggle('active');
+            notificationsSidebar.classList.remove('active');
+            messagesSidebar.classList.remove('active');
+            paymentSidebar.classList.remove('active');
+            logoutSidebar.classList.remove('active');
+        });
+    
+        document.getElementById('paymentButton').addEventListener('click', () => {
+            paymentSidebar.classList.toggle('active');
+            notificationsSidebar.classList.remove('active');
+            messagesSidebar.classList.remove('active');
+            dealsSidebar.classList.remove('active');
+            logoutSidebar.classList.remove('active');
+        });
+    
+        document.getElementById('logoutButton').addEventListener('click', () => {
+            logoutSidebar.classList.toggle('active');
+            notificationsSidebar.classList.remove('active');
+            messagesSidebar.classList.remove('active');
+            dealsSidebar.classList.remove('active');
+            paymentSidebar.classList.remove('active');
+        });
+    
+        document.getElementById('confirmLogoutButton').addEventListener('click', () => {
+            window.location.href = '/';
+        });
+        </script>
+    <script src="/log in project/User.js"></script>
+    
+    <script src="/log in project/login.js"></script>
+
+        </body>
+
+        </html>

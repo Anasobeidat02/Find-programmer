@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Join</title>
+    <link rel="stylesheet" href="/log in project/programmer_joined.CSS">
+</head>
+<body>
+    <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+        <div id="div0-2">
+            <div class="input-container">
+                <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+                <div onclick="submitForm('profilePicture')">Upload Profile Picture</div>
+            </div>
+            
+            <div class="input-container">
+                <input type="file" id="certifications" name="certifications" accept=".pdf,.doc,.docx" required>
+                <div onclick="submitForm('certifications')">Upload Certifications</div>
+            </div>
+            
+            <div class="input-container">
+                <input type="text" id="note" name="note" placeholder="أدخل ملاحظتك هنا" required>
+            </div>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        function submitForm(fieldId) {
+            document.getElementById(fieldId).click();
+        }
+    </script>
+    <script src="/log in project/programmer_joined.js"></script>
+</body>
+</html>

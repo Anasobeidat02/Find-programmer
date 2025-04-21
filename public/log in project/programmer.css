@@ -1,0 +1,444 @@
+body {
+    background-color: aliceblue;
+    padding: 0;
+    margin: 0;
+}
+
+/*========================================================================*/
+#header {
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #0c0c0c;
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-top: 0;
+    z-index: 1;
+    padding: 8px; 
+    border-bottom: 1.92px solid white; 
+}
+
+.logo {
+    padding-left: 16px; 
+}
+
+#header .logo i {
+    color: #8D2A2A;
+    font-family: "Kalam", cursive;
+    font-size: 48px; 
+    font-weight: bold;
+}
+
+#header .logo a {
+    font-size: 40px; 
+    font-weight: bold;
+    color: #8D2A2A;
+    font-family: "Kalam", cursive;
+    text-decoration: none;
+}
+
+#menu0-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu2-1 {
+    display: inline-block;
+    margin-right: 16px; 
+}
+
+.button0-1 {
+    color: white;
+    font-size: 24px; 
+    padding: 16px 24px; 
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.button0-1:hover {
+    color: #8D2A2A;
+}
+
+.dropdown {
+    top: 72px; 
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    background-color: black;
+}
+
+.dropdown a {
+    color: white;
+    padding-top: 11.2px; 
+    padding-left: 48px; 
+    text-decoration: none;
+    display: block;
+    font-size: 20.8px; 
+    background: rgba(10, 10, 10, 0.911);
+}
+
+.dropdown a:hover {
+    color: #8D2A2A;
+}
+
+
+.button0-1:hover .dropdown {
+    display: block;
+}
+
+.log-in {
+    font-weight: bold;
+    font-size: 24px; 
+    padding: 8px 24px; 
+    background-color: transparent;
+    color: #fcf7f7;
+    border-radius: 16px; 
+    border: 3.2px solid #c0bcbc; 
+    transition: 0.2s;
+}
+
+.log-in:hover {
+    background-color: #8D2A2A;
+    color: white;
+}
+  /* ===================================================== */
+  #div0-1 {
+    height: 45rem; 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.781), rgba(0, 0, 0, 0.781)), url('imgs/Programmer imgs/1(1).png'), no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem;
+}
+
+.div1-1 {
+    color: white;
+    text-align: center;
+    padding-left: 53rem;
+    font-size: 1.6rem;   
+}
+#div0-1 a {
+    text-decoration: none;
+    font-family: "Kalam", cursive;
+    color: #8D2A2A;
+  
+  }
+
+.div2-1 {
+    position: relative;
+    display: flex;
+    justify-content: flex-end; /* Align the form to the right */
+    padding-right: 2rem; /* Add padding to the right for spacing */
+}
+
+.form1 {
+    display: flex;
+    flex-wrap: wrap; /* Allows fields to wrap onto multiple lines */
+    gap: 1rem; /* Space between fields */
+    width: 35rem; /* Adjust width to fit form elements */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Position the label above the input */
+    width: 48%; /* Each group takes up half the width for two in a row */
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem; /* Space between the label and input */
+}
+
+.form-group input {
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 2px solid #8D2A2A;
+    border-radius: 0.6rem;
+    font-size: 1.5rem;
+    height: 2.7rem;
+    width: 92%; /* Ensure the input fits within the group */
+}
+
+.div3-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.dropdown1 {
+    background-color: transparent;
+    border: 2px solid #8D2A2A;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 48%;
+    position: relative;
+    top: -80px;
+}
+
+.dropdown1 option {
+    background-color: black; /* Set background color for dropdown options */
+    color: white; /* Set text color for dropdown options */
+}
+.button1, .button2 {
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: 2px solid #8D2A2A;
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem; 
+    cursor: pointer;
+    width: 48%;
+    position: relative;
+    right: -140px;
+}
+
+.button1:hover, .button2:hover {
+    background-color: rgb(77, 140, 77);
+}
+
+/* =========================================== */
+
+
+
+#div0-2 {
+    background-color: #192C4D;
+    padding: 3rem;
+    padding-bottom: 4rem;
+    font-family: 'roboto';
+}
+
+.p1-2 {
+    color: #b4d6f4;
+    font-size: 2.3rem;
+    font-family: sans-serif;
+    padding-left: 0.1rem;
+    font-weight: bold;
+}
+
+
+
+.div1-2 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    padding-left: 7rem;
+    padding-right: 8rem;
+}
+
+.div1-2 p {
+    width: 13rem;
+    height: 7rem;
+    text-align: center;
+    vertical-align:middle;
+    padding-top: 7%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    /* padding: 0.8rem; */
+    margin: 1rem;
+    border: #4b1c04 0.1rem solid;
+    border-radius: 0.63rem;
+    transition:  0.4s ease;
+}
+.div1-2 p:hover{
+    width: 15rem;
+    height: 10rem;
+    border: black 0.3rem solid;
+}
+
+
+
+
+
+  /* ================================================================================== */
+  #div0-3 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(37, 37, 37);
+    padding: 3rem;
+    padding-bottom: 10rem;
+    font-family: 'roboto';
+  }
+
+ #div0-3 img{
+      vertical-align: right;
+      height: auto; 
+      width: 47%; 
+      filter: brightness(20%);
+      position:absolute;
+      right: 1rem;
+      top: 10rem;
+
+    }
+
+
+    .game p {
+       
+        
+        color: white;
+        font-size: 2.5rem;
+        position: relative;
+        left: -4rem;
+       
+    }
+    .game h1 {
+        font-size: 3rem;
+        color: white;
+        position: relative;
+        left: -2rem;
+
+
+    }
+
+/* ====================================== */
+
+    #div0-4 {
+        /* text-align: center; */
+        background-color: #6b6bcb;
+        color: white;
+
+        padding-top: 5rem;
+        padding-bottom: 6rem;
+        font-family: 'roboto';
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+
+#div0-4 img{
+
+vertical-align: right;
+height: 360px; 
+width: 300px;
+filter: brightness(60%);
+position:absolute;
+right: 1rem;
+bottom: -0.3rem;
+    }
+
+    #div0-4 .div1-4{
+
+    font-size: 3rem;
+    color: white;
+    position: relative;
+    left: 3rem;
+    bottom: 4rem;
+}
+
+
+#div0-4 #button1-1 {
+   
+    border-radius: .7rem;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    border: .1rem solid #4aed6a;
+    position: absolute;
+    top:10rem;
+    left: 4rem;
+     /* transform: translate(-50%, -50%);  */
+    cursor: pointer; 
+   
+}
+#div0-4 a {
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Kalam", cursive;
+    color: #8D2A2A;
+  
+  }
+
+
+.line{
+    background-color:  rgb(37, 37, 37);
+    
+    }
+
+  /* ============================================ */
+
+  #footer {
+    background-color: #0c0c0c;
+ }
+
+ #div0-f {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+ }
+
+ #div1-f {
+    font-family: "Kalam", cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50;
+    color: #8D2A2A;
+    text-shadow: 0rem 4rem 4rem rgba(0, 0, 0, 0.25);
+ }
+
+
+#div2-f a,
+#div4-f a {
+    text-decoration: none;
+}
+
+#div2-f,
+#div3-f,
+#div4-f,
+footer a {
+    color: aliceblue;
+
+}
+
+ul {
+    list-style: none;
+    line-height: 1.7rem;
+}
+
+.footerDivs {
+    direction: rtl;
+    text-align: left;
+    font-size: 18px;
+    margin: 1rem 2rem;
+    white-space: nowrap;
+
+}
+
+#div5-f {
+    margin-top: 1rem;
+    margin-left: 4rem;
+
+}
+
+#div6-f {
+    padding-left: 0.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    color: aliceblue;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+}
+
+.BAU-image {
+    width: 7rem;
+    height: auto;
+    border-radius: 1rem;
+}

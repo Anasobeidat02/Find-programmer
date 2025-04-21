@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= collectionName %></title>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+    <style>
+        body{
+           background-color: #191919; 
+        }
+        #div0-3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 64px;
+}
+
+        
+.card {
+    flex-grow: 1;
+    width: 25%;
+    display: inline-block;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 8px;
+    margin: 32px;
+}
+a{
+    list-style-type: none;
+    text-decoration: none;
+    color: #060606;
+    padding: 8px 32px;
+      font-size: 24px;
+      margin-left: 80px;
+      border-radius: 8px;
+      background-color:blanchedalmond;
+     
+}
+a:hover{
+    background-color: transparent;
+    color: white;
+}
+.image img {
+    width: 50%;
+    height: auto;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    padding: 64px;
+    position: relative;
+    left: 65px;
+}
+
+.title {
+    text-align: left;
+    padding: 8px;
+}
+
+.title h1 {
+    font-size: 24px;
+    color: rgb(164, 164, 8);
+}
+
+.des {
+    padding: 16px;
+    text-align: left;
+    color: white;
+    padding-top: 4.8px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.des .p-0 {
+    font-size: 24px;
+}
+.des p{
+    font-size: 22px;
+}
+.p-1 {
+    font-size: 19px;
+    color: yellowgreen;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Google Sign-In button placeholder -->
+    <div id="google-signin-button"></div>
+    
+    <!-- Logged in user information -->
+    <div id="logged-in-user" style="display: none;">
+        <ul>
+            <li id="user-firstName"></li>
+            <li id="user-email"></li>
+        </ul>
+    </div>
+
+    <!-- Form to create a new user -->
+    <!-- <div>
+        <input type="text" id="firstName" placeholder="First Name" />
+        <input type="number" id="age" placeholder="Age" />
+        <input type="text" id="email" placeholder="Email" />
+        <input type="password" id="password" placeholder="Password" />
+        <button onclick="createUser()">Create User</button>
+        <button onclick="logOut()">Logout</button>
+    </div> -->
+
+    <!-- Existing users list -->
+    <h1 style="color: #fff;">Users List</h1>
+    <div id="div0-3">
+        <% users.map(function(user) { %>
+            <div class="card">
+                <div class="image">
+                    <img src="<%= user.profilePicture %>" alt="User Image">
+                </div>
+                <div class="title">
+                    <h1><%= user.firstName || user.name %></h1>
+                </div>
+                <div class="des">
+                    <p class="p-0"><%= user.note %></p>
+                    <p> &#11088; <%= user.rate %></p>
+                    
+                    <a href="/<%= collectionName %>/<%= user._id %>">View Profile</a>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

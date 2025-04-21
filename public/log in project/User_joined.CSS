@@ -1,0 +1,379 @@
+body {
+    background: rgb(37, 37, 37);
+    padding: 0;
+    margin: 0;
+}
+
+/* ================================================ */
+
+#menu0-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu2-1 {
+    display: inline-block;
+    margin-right: 16px;
+}
+
+.button0-1 {
+    color: white;
+    font-size: 24px;
+    padding: 16px 24px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.button0-1:hover {
+    color: #8D2A2A;
+}
+
+.dropdown {
+    top: 72px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown a {
+    color: white;
+    padding-top: 11.2px;
+    padding-left: 48px;
+    text-decoration: none;
+    display: block;
+    font-size: 20.8px;
+}
+
+.dropdown a:hover {
+    color: #8D2A2A;
+}
+
+.dropdown:hover {
+    background: rgba(10, 10, 10, 0.89);
+}
+
+.button0-1:hover .dropdown {
+    display: block;
+}
+
+.log-in {
+    font-weight: bold;
+    font-size: 24px;
+    padding: 8px 24px;
+    background-color: transparent;
+    color: #fcf7f7;
+    border-radius: 16px;
+    border: 3.2px solid #c0bcbc;
+    transition: 0.2s;
+}
+
+.log-in:hover {
+    background-color: #8D2A2A;
+    color: white;
+}
+
+/* ================================================= */
+#div0-1 {
+    background: rgb(37, 37, 37);
+    padding: 8px;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+#div0-1 p {
+    position: relative;
+    top: 80px;
+}
+
+/* =============================== */
+#div0-2 {
+    background: rgb(37, 37, 37);
+    height: 400px;
+    display: flex;
+    padding-top: 80px;
+}
+
+.div1-2 {
+    background: #f73b79cc;
+    color: aliceblue;
+    font-family: sans-serif;
+    padding: 56px;
+    text-align: center;
+    border-radius: 16px;
+    width: 850px;
+    height: 120px;
+    padding-right: 540px;
+    margin-left: 30px;
+}
+
+.div1-2 p {
+    font-size: 48px;
+    position: absolute;
+    top: 330px;
+    left: 192px;
+
+}
+
+.div2-2 img {
+    width: 350px;
+    position: absolute;
+    left: 980px;
+    bottom: 138px;
+}
+
+.a1-2 {
+    text-decoration: none;
+    font-family: "Kalam", cursive;
+    font-weight: bold;
+    color: #8D2A2A;
+}
+
+/* ============================================ */
+#div0-3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 64px;
+}
+
+.card {
+    flex-grow: 1;
+    width: 25%;
+    display: inline-block;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 8px;
+    margin: 32px;
+}
+
+.image img {
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    padding: 64px;
+}
+
+.title {
+    text-align: left;
+    padding: 8px;
+}
+
+.title h1 {
+    font-size: 24px;
+    color: rgb(164, 164, 8);
+}
+
+.des {
+    padding: 16px;
+    text-align: left;
+    color: white;
+    padding-top: 4.8px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+.des .p-0 {
+    font-size: 24px;
+}
+.des p{
+    font-size: 22px;
+}
+.p-1 {
+    font-size: 19px;
+    color: yellowgreen;
+}
+
+/* ======================================================= */
+.div0-4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+.div1-4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse; /* This will place the image on the right */
+  display: none;
+  transition: opacity 0.5s ease;
+  width: 100%; /* Ensure each item takes the full width */
+  max-width: 1200px; /* Optional: Set a max width to control the layout on larger screens */
+  margin: 10px 0; /* Optional: Add some margin between items */
+}
+
+.div1-4.active {
+  display: flex; /* Changed from block to flex to maintain the layout */
+  opacity: 1;
+}
+
+.div1-4  img {
+  width: 510px; /* Adjust the width as needed */
+  height: 350px;
+  object-fit: cover;
+  margin-left: 20px; /* Space between the image and the text */
+  position: relative;
+  right: 290px;
+}
+.div1-4 span{
+  font-size: 33px;
+  color: white;
+  cursor: pointer;
+position: relative;
+bottom: -200px;
+left: 300px;
+}
+.div1-4 .text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the left */
+  color: white;
+  position: relative;
+  right: 100px;
+}
+.div1-4 .text-content .button0-4{
+  color: #060606;
+    padding: 8px 32px;
+      font-size: 24px;
+      margin-left: 80px;
+      border-radius: 8px;
+      background-color:blanchedalmond;
+}
+.div1-4 .text-content p{
+  font-size: 35px;
+  color: rgb(177, 247, 37);
+  font-family: sans-serif;
+
+}
+/* =========================================== */
+  .div0-5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.div1-5 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse; /* This will place the image on the right */
+    display: none;
+    transition: opacity 0.5s ease;
+    width: 100%; /* Ensure each item takes the full width */
+    max-width: 1200px; /* Optional: Set a max width to control the layout on larger screens */
+    margin: 10px 0; /* Optional: Add some margin between items */
+}
+
+.div1-5.active {
+    display: flex; /* Changed from block to flex to maintain the layout */
+    opacity: 1;
+}
+
+.div1-5 img {
+    width: 450px; /* Adjust the width as needed */
+    height: 250px;
+    object-fit: cover;
+    margin-left: 20px; /* Space between the image and the text */
+}
+.div1-5 span{
+    font-size: 33px;
+    color: white;
+    cursor: pointer;
+
+}
+.div1-5 .text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+    color: white;
+    padding-left: 80px;
+}
+.text-content h3{
+    font-size: 40px;
+}
+.text-content p{
+    font-size: 25px;
+    color: rgb(177, 247, 37);
+    font-family: sans-serif;
+
+}
+/* ========================================================== */
+#footer {
+    background-color: #0c0c0c;
+}
+
+#div0-f {
+    padding: 32px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#div1-f {
+    font-family: "Kalam", cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #8D2A2A;
+    text-shadow: 0px 64px 64px rgba(0, 0, 0, 0.25);
+}
+
+
+#div2-f a,
+#div4-f a {
+    text-decoration: none;
+}
+
+#div2-f,
+#div3-f,
+#div4-f,
+footer a {
+    color: aliceblue;
+
+}
+
+ul {
+    list-style: none;
+    line-height: 1.7rem;
+}
+
+.footerDivs {
+    direction: rtl;
+    text-align: left;
+    font-size: 18px;
+    margin: 1rem 2rem;
+    white-space: nowrap;
+
+}
+
+#div5-f {
+    margin-top: 16px;
+    margin-left: 64px;
+
+}
+
+#div6-f {
+    padding-left: 8px;
+    margin-left: 64px;
+    margin-right: 64px;
+    color: aliceblue;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+}
+
+.BAU-image {
+    width: 112px;
+    height: auto;
+    border-radius: 16px;
+}

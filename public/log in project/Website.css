@@ -1,0 +1,363 @@
+body {
+  background-color: #f8f5f5;
+  padding: 0;
+  margin: 0;
+
+}
+
+/* ====================  Bar =====================*/
+
+#header {
+  font-family: "roboto";
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  background: #0c0c0c;
+  position: sticky;
+  top: 0;
+  left: 0;
+  border-top: 0;
+  z-index: 1;
+  padding: 0.5rem;
+  border-bottom: 0.12rem solid white;
+}
+
+.logo {
+  padding-left: 1rem;
+}
+
+#header .logo i {
+  color: #8D2A2A;
+  font-family: "Kalam", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  position: relative;
+  top: .5rem;
+}
+
+#header .logo a {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #8D2A2A;
+  font-family: "Kalam", cursive;
+  position: relative;
+  top: .3rem;
+  text-decoration: none;
+}
+#menu0-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu2-1 {
+  display: inline-block;
+  margin-right: 1rem; 
+}
+
+.button0-1 {
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.button0-1:hover {
+  color:#8D2A2A;
+}
+  .dropdown {
+  top:4.5rem;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown a {
+  color:white;
+  padding-top:.7rem ;
+  padding-left: 3rem;
+  text-decoration: none;
+  display: block;
+  font-size: 1.3rem;
+}
+.dropdown a:hover{
+    color: #8D2A2A;
+}
+.dropdown:hover {
+  background: rgba(10, 10, 10, 0.89);
+}
+
+.button0-1:hover .dropdown{
+  display: block;
+}
+
+.log-in {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding:.5rem 1.5rem;
+  background-color: transparent;
+  color: #fcf7f7;
+  border-radius: 1rem;
+  border: .2rem solid #c0bcbc;
+  transition: 0.2s;
+}
+.log-in:hover {
+  background-color: #8D2A2A;
+  color: white;
+} 
+
+/* ============================Website development==================*/
+#div01 {
+  font-family: "roboto";
+  background: linear-gradient(to bottom, rgba(2, 2, 2, 0.897), rgba(0, 0, 0, 0.692)), url("imgs/website_development_img1.jpeg"), no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #f8f5f5;
+}
+#div01 a {
+  text-decoration: none;
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  color: #8D2A2A;
+}
+#div01 p {
+  font-size: 2rem;
+  padding: 5rem;
+  height: fit-content;
+  position: relative;
+  top: -3rem;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+#div01 h4 {
+  font-size: 2.5rem;
+  padding-top: 8rem;
+  margin-block-start: -1em;
+}
+/* ========================== Arrow ============== */
+.container {
+  font-family: "roboto";
+  position: relative;
+  width: 70%;
+  height: 150px;
+  overflow: hidden;
+  top: -2rem;
+}
+
+.arrow {
+  position: absolute;
+  border-left: 4rem solid #808080;
+  border-top: 1rem solid transparent;
+  border-bottom: 1rem solid transparent;
+
+}
+.arrow::before {
+  content: "";
+  position: absolute;
+  top: -.5rem;
+  left: -3rem;
+  width: 10rem;
+  height: 1rem;
+  transform-origin: left center;
+  transform: rotate(-180deg);
+}
+.top-to-bottom {
+  left: 54rem;
+  border-left-color: #fdfffd;
+  transform: rotate(90deg);
+  animation: top-to-bottom-anim 1s linear infinite;
+}
+.top-to-bottom::before {
+  background: #fcfdfc;
+}
+@keyframes top-to-bottom-anim {
+  0% {
+    top: -20%;
+  }
+
+  100% {
+    top: 100%;
+  }
+}
+.top p {
+  
+  font-family: "roboto";
+  position: absolute;
+  color: #fdfdfd;
+  text-align: center;
+  font-size: 2rem;
+   left: 60rem; 
+   top: 34rem;
+}
+
+ /* =================================ID Card====================== */
+
+#div03 {
+  font-family: "roboto";
+  display: grid;
+  background: rgb(37, 37, 37);
+display: flex;
+}
+.div2-3{
+  background-color:rgba(255, 255, 255, 0.651);
+  width: 800px;
+  height: 800px;
+  text-align: center;
+  color: rgb(7, 7, 7);
+  font-size: 25px;
+  position: relative;
+  left: 100px;
+  top: 50px;
+}
+.showInfo h3{
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.showInfo p{
+  font-size: 30px;
+}
+.card {
+  background-color: #4caf50;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 35rem;
+  width: 30rem;
+  height: 3rem;
+  text-align: center;
+  color: rgb(7, 7, 7);
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+  top: 1.5rem;
+  left: 2.5rem;
+  cursor: pointer;
+
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card h2 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+.card p {
+  font-size: 1.2rem;
+  font-weight: bold;  
+}
+/* ===========================Related topics=============== */
+.div0-4{
+  
+  font-family: "roboto";
+  background-color: #192C4D;
+  padding: 3rem;
+  padding-bottom: 4rem;
+}
+.p1-4{
+  color: #b4d6f4;
+  font-size: 2.3rem;
+  font-family: sans-serif;
+  padding-left: 1rem;
+  font-weight: bold;
+}
+.div1-4{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.div1-4 a{
+  width: 15rem;
+  text-align: center;
+  text-decoration: none;
+  color: #9ccaf1;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+  padding: 0.8rem;
+  margin: 1rem;
+  border: #9ccaf1 0.1rem solid;
+  border-radius: 0.63rem;
+  transition: transform 0.2s ease-in-out;
+
+}
+.div1-4 a:hover {
+  transform: translateY(-5px);
+}
+
+/* ============================= Footer ============================== */
+
+#footer {
+  font-family: "roboto";
+  padding: 2rem;
+  background-color: #0c0c0c;
+}
+
+#div0-f {
+  margin: 2rem;
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+#div1-f {
+  font-family: "Kalam", cursive;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50;
+  color: #8D2A2A;
+  text-shadow: 0rem 4rem 4rem rgba(0, 0, 0, 0.25);
+}
+
+
+#div2-f a,
+#div4-f a {
+  text-decoration: none;
+}
+
+#div2-f,
+#div3-f,
+#div4-f,
+footer a {
+  color: aliceblue;
+
+}
+
+ul {
+  list-style: none;
+  line-height: 1.7rem;
+}
+
+.footerDivs {
+  direction: rtl;
+  text-align: left;
+  font-size: 1.2rem;
+  margin: 1rem 2rem;
+  white-space: nowrap;
+
+}
+
+#div5-f {
+  margin-top: 1rem;
+  margin-left: 4rem;
+
+}
+
+#div6-f {
+  padding-left: 0.5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  color: aliceblue;
+  font-size: larger;
+  display: flex;
+  justify-content: space-between;
+}
+
+.BAU-image {
+  width: 7rem;
+  height: auto;
+  border-radius: 1rem;
+}

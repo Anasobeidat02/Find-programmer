@@ -1,0 +1,362 @@
+body {
+    background: rgb(37, 37, 37);
+    padding: 0;
+    margin: 0;
+}
+
+/* ================================================ */
+/* #header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background: #0c0c0c;
+    position: sticky;
+    top: 0;
+    left: 0;
+    border-top: 0;
+    z-index: 1;
+    padding: 0.5rem;
+    border-bottom: 0.12rem solid white;
+}
+
+.logo {
+    padding-left: 1rem;
+}
+
+#header .logo i {
+    color: #8D2A2A;
+    font-family: "Kalam", cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    position: relative;
+    top: .5rem;
+}
+
+#header .logo a {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #8D2A2A;
+    font-family: "Kalam", cursive;
+    position: relative;
+    top: .3rem;
+    text-decoration: none;
+}
+
+#menu0-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu2-1 {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.button0-1 {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.button0-1:hover {
+    color: #8D2A2A;
+}
+
+.dropdown {
+    top: 4.5rem;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown a {
+    color: white;
+    padding-top: .7rem;
+    padding-left: 3rem;
+    text-decoration: none;
+    display: block;
+    font-size: 1.3rem;
+}
+
+.dropdown a:hover {
+    color: #8D2A2A;
+}
+
+.dropdown:hover {
+    background: rgba(10, 10, 10, 0.89);
+}
+
+.button0-1:hover .dropdown {
+    display: block;
+}
+
+.log-in {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: .5rem 1.5rem;
+    background-color: transparent;
+    color: #fcf7f7;
+    border-radius: 1rem;
+    border: .2rem solid #c0bcbc;
+    transition: 0.2s;
+}
+
+.log-in:hover {
+    background-color: #8D2A2A;
+    color: white;
+}
+ */
+
+/* ================================================= */
+#div0-1 {
+    background: rgb(37, 37, 37);
+    padding: .5rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+
+}
+#div0-1 p{
+    position: relative;
+    top: 5rem;
+}
+/* =============================== */
+#div0-2 {
+    background: rgb(37, 37, 37);
+    height: 400px;
+    display: flex;
+    padding-top: 5rem;
+
+}
+.div1-2{
+    background: #f73b79cc;
+    color: aliceblue;
+    font-family: sans-serif;
+    padding: 3.5rem;
+    text-align: center;
+    border-radius: 1rem;
+    width: 850px;
+    height: 100px;
+    padding-right: 25rem;
+    margin-left: 1rem;
+}
+.div1-2 p {
+    font-size: 3rem;
+position:absolute;
+top: 20rem;
+left: 12rem;
+}
+
+.div2-2 img {
+    width: 20rem;
+    position: absolute;
+    left: 60rem;
+    bottom: 5.5rem;
+}
+
+.a1-2 {
+    text-decoration: none;
+    font-family: "Kalam", cursive;
+    font-weight: bold;
+    color: #8D2A2A;
+}
+/* ============================================ */
+#div0-3{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem;
+   }
+   
+   .card{
+       flex-grow: 1;
+        width: 25%;
+        display: inline-block;
+        box-shadow: 2px 2px 20px black;
+        border-radius: 5px; 
+        margin: 2%;
+       }
+   
+   .image img{
+     width: 100%;
+     border-top-right-radius: 5px;
+     border-top-left-radius: 5px;
+     padding: 4rem;
+    
+    }
+   
+   .title{
+    
+     text-align: left;
+     padding: .5rem;
+     
+    }
+   
+   h1{
+     font-size: 1.5rem;
+     color: rgb(164, 164, 8);
+    }
+   
+   .des{
+     padding: 1rem;
+     text-align: left;
+    color: white;
+     padding-top: .3rem;
+     border-bottom-right-radius: 1rem;
+     border-bottom-left-radius: 1rem;
+   }
+   .des .p-0{
+    font-size: 1.5rem;
+   }
+   .p-1{
+    font-size: 1rem;
+    color: yellowgreen;
+   }
+
+/* ======================================================= */
+#div0-4{
+    /* margin: 2%; */
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.card0-4{
+    flex-grow: 1;
+    width: 16%;
+    height: 15%;
+    display: inline-block;
+    box-shadow: 2px 2px 20px black;
+    border-radius: 1rem; 
+    background: #e2dfe1bd;
+
+   }
+   .image0-4{
+    margin-bottom: 4rem;
+   }
+   .image0-4 img{
+    width: 100%;
+    border-top-right-radius: .1rem;
+    border-top-left-radius: .1rem;
+   }
+   
+   .title0-4{
+    font-size: 1rem;
+    text-align: center;
+    /* padding: .5rem; */
+    font-weight: 700;
+    
+   }
+   .button0-4{
+    padding-bottom: 2rem;
+   }
+   .button0-4 button{
+    padding: .5rem 2rem;
+    font-size: 1.5rem;
+    margin-left: 5rem;
+    border-radius: .5rem;
+    background-color:transparent;
+
+   }
+  
+/* =========================================== */
+.div0-5{
+    display: flex;
+    width: 900px;
+    overflow-x: scroll;
+}
+.div1-5{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.div1-5 img{
+width: 100%;
+}
+.div0-5::-webkit-scrollbar{
+    display: none;
+}
+.div2-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+/*==========================================================*/
+#footer {
+    background-color: #0c0c0c;
+}
+
+#div0-f {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#div1-f {
+    font-family: "Kalam", cursive;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50;
+    color: #8D2A2A;
+    text-shadow: 0rem 4rem 4rem rgba(0, 0, 0, 0.25);
+}
+
+
+#div2-f a,
+#div4-f a {
+    text-decoration: none;
+}
+
+#div2-f,
+#div3-f,
+#div4-f,
+footer a {
+    color: aliceblue;
+
+}
+
+ul {
+    list-style: none;
+    line-height: 1.7rem;
+}
+
+.footerDivs {
+    direction: rtl;
+    text-align: left;
+    font-size: 1.2rem;
+    margin: 1rem 2rem;
+    white-space: nowrap;
+
+}
+
+#div5-f {
+    margin-top: 1rem;
+    margin-left: 4rem;
+
+}
+
+#div6-f {
+    padding-left: 0.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    color: aliceblue;
+    font-size: larger;
+    display: flex;
+    justify-content: space-between;
+}
+
+.BAU-image {
+    width: 7rem;
+    height: auto;
+    border-radius: 1rem;
+}

@@ -1,0 +1,441 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    *
+    {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    }
+    .header{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 99;
+    background: transparent;
+    }
+
+    .header .nav a
+    {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    margin-left: 20px;
+    font-weight: 600;
+    }
+
+    .header .search input
+    {
+    background: transparent;
+
+    font-size: 20px;
+
+    border-radius: 5px; border: 2px solid white;
+
+    padding-left: 10px;
+
+    right: 100px;
+    outline: none;
+    color: #fff;
+    }
+
+    .header .search i
+    {
+        position: absolute;
+        right: 110px;
+        top:22px;
+        color: #fff;
+    }
+    .background
+    {
+    width: 100%;
+    height: 100vh;
+    /* background-image: url('Screenshot_٢٠٢٣٠٨١٩_١٥١٩٢٦_TikTok.jpg');  */
+    background-color: #191919;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .join {
+        font-weight: bold;
+  font-size: 1.5rem;
+  padding: .5rem 1.5rem;
+  background-color: transparent;
+  color: #fcf7f7;
+  border-radius: 1rem;
+  border: .2rem solid #c0bcbc;
+  transition: 0.2s;
+        cursor: pointer;
+    }
+    
+    .popup {
+        display: none; 
+        position: fixed; 
+        z-index: 1; 
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%; 
+        overflow: auto; 
+        background-color: rgb(0,0,0); 
+        background-color: rgba(0,0,0,0.4); 
+    }
+    
+    .popup-content {
+        background-color: #fefefe;
+        margin: 15% auto; 
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; 
+        max-width: 700px; 
+        border-radius: 10px;
+    }
+    
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .home
+    { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 75%; 
+    height: 75%;
+    transform: translate(-50%, -50%);
+    background-color: #8D2A2A;;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    border: none;
+    }
+
+    .content
+
+    {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    padding: 100px 0;
+    text-align: center;
+    }
+    .content a
+    {
+    position: relative;
+    text-decoration: none; 
+    font-weight: 700;
+    color: #fff;
+    font-size: 3em;
+    top: -40px;
+    left: 80px;
+    }
+
+    .content h2
+    {
+    font-size: 3.5em;
+    text-align: center;
+    color: #fff;
+    }
+
+
+    .content h3
+    {
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    }
+
+    .content pre
+
+    {
+    margin-top: 20px;
+    position: absolute;
+    padding-left: 130px;
+    padding-top: 80px;
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    display: block; /* تحويل الصورة إلى عنصر بلوكي */
+    margin-left: auto; /* جعل المسافة على اليسار تلقائية */
+    margin-right: auto; /* جعل المسافة على اليمين تلقائية */
+    }
+
+    .content .loginImg{
+        display: inline-block;
+        height: 250px;
+        width: 350px;
+        border-radius: 8px;
+        display: block; /* تحويل الصورة إلى عنصر بلوكي */
+        margin-left: auto; /* جعل المسافة على اليسار تلقائية */
+        margin-right: auto; /* جعل المسافة على اليمين تلقائية */
+        margin-top: 110px;
+        
+    }
+
+    .content .icon  {
+        margin-top: 20px;
+        font-size: 1.5em;
+        display: flex;
+        justify-content: center;
+        }
+        
+     .content .icon i
+        {
+        margin-left: 20px;
+        color: #fff;
+        }
+        /* --------------------------------------- */
+        
+        .login, .login-form { /* استخدام نفس الأنماط */
+            width: 500px;
+            position: relative;
+            padding: 100px 30px;
+            background-color: black;
+            backdrop-filter: blur(20px);
+        }
+        
+        .login h1, .login-form h2 { /* تنسيقات العناوين */
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        .login .input, .login-form .input { /* تنسيقات المدخلات */
+            position: relative;
+            width: 100%;
+            height: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .login input[type=radio], .login-form input[type=radio] { /* تنسيقات الراديو */
+            accent-color: #8D2A2A;
+            /* position: absolute; */
+            /* right: 1px; */
+            margin-right: 3px; 
+
+        }
+
+        .login label, .login-form label { /* تنسيقات التسمية */
+            color: #fff;
+            /* position: absolute; */
+            /* right: 1px; */
+            margin-right: 15px; 
+
+
+        }
+        .login .main{
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .hide {
+            display: none; /* Initially hidden */
+            justify-content:center;
+        }
+        
+        
+        .login .input .input1, .login-form .input .input1 { /* المدخلات الأخرى */
+            font-size: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #fff;
+            color: #fff;
+            width: 100%;
+            height: 100%;
+        }
+
+        ::placeholder
+        {
+        color: #fff;
+        font-size: 18px;
+        }
+        
+        .login .input i
+        
+        {
+        position: relative;
+        right: -370px;
+        bottom: 27px;
+        color: #fff;
+        }
+
+        .check { /* قسم التحقق */
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            color: #fff;
+        }
+
+        .check a { /* روابط التحقق */
+            text-decoration: none;
+            color: #fff;
+        }
+        .check a:hover
+        
+        {
+        
+        text-decoration: underline;
+        }
+
+        .login .button, .login-form .button { /* قسم الأزرار */
+            width: 100%;
+            height: 40px;
+            margin-bottom: 15px;
+        }
+
+        button
+        {
+        width: 100%;
+        height: 40px;
+        background-color: black;
+
+        border: 3px solid #8D2A2A ;
+        outline: none;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 7px;
+        color: #fff;
+        /* padding-top: 10px; */
+        margin-top: 20px;
+        }
+
+        button:active
+        {
+        
+        font-size:25px;
+        }
+
+        .login .signIn, .login-form .sign-up { /* القسم السفلي */
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .login .signIn  a
+        {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 700;
+        }
+    
+        .login .signIn , .login-form p
+        {
+            color: #8D2A2A;
+        }   
+        .login-form .input i
+        {
+            color: #fff;
+        }
+        .login-form .sign-up a{
+            text-decoration: none;
+        }
+        .signIn , .login-form a:hover
+        {
+            text-decoration: underline;
+        }
+    /* ------ */
+    /* .hidden{
+        display: none; }/* يخفي القسم بشكل افتراضي */
+    
+    /* -------------------------------------- */
+
+
+    /* .is-hidden { 
+        display: none;
+    } */
+
+    .signUp {
+        width: 100%; /* يأخذ كامل العرض */
+        height: 100%; /* يأخذ كامل الارتفاع */
+        display: flex; /* لاستخدام مرونة التخطيط */
+        flex-direction: row; /* تخطيط أفقي */
+        background-color: #191919;
+    }
+    
+    .signup-form {
+        width: 100%; /* عرض كامل */
+        display: flex;
+        flex-direction: row; /* التخطيط الأفقي */
+        justify-content: space-between; /* توزيع المسافات بين العناصر */
+    }
+    
+    .image-container {
+        width: 50%; /* نصف عرض الحاوية */
+        position: relative; /* للسماح باستخدام الموضع المطلق */
+        text-align: center;
+        
+    }
+    
+    .image-container img {
+        width:100%; /* عرض الصورة */
+        height:100%; /* الحفاظ على نسبة العرض إلى الارتفاع */
+        object-fit: contain;
+        /* height: 200px;
+        width: 200px;
+        object-fit: contain; */
+    }
+    
+    .image-container button {
+        position: absolute; /* التموضع المطلق */
+        width: 150px;
+        height: 80px;
+        top: 50%; /* في منتصف الارتفاع */
+        left: 50%; /* في منتصف العرض */
+        transform: translate(-50%, -50%); /* لتوسيط الزر */
+        background-color: transparent; /* خلفية شفافة */
+        border: 2px solid #8D2A2A; /* لون الحواف */
+        color: #fff; /* لون النص */
+        border-radius: 5px; /* حواف مدورة */
+        padding: 10px; /* حشوة للزر */
+        padding-bottom: 2px;
+    }
+    
+    .left {
+        width: 50%; /* النصف الآخر */
+        padding: 20px; /* بعض المساحة الداخلية */
+        display: flex;
+        flex-direction: column; /* التخطيط العمودي */
+    }
+    
+    .left label {
+        display: block; /* كل تسمية على سطر منفصل */
+        margin-bottom: 10px; /* مسافة بين التسميات */
+        color: #fff;
+        font-size: 20px;
+    }
+    
+    .left input {
+        width: 100%; /* عرض كامل */
+        height: 50px;
+        padding: 5px; /* بعض الحشوة */
+        background-color: transparent; /* خلفية شفافة */
+        border: 2px solid #8D2A2A; /* لون الحواف */
+        border-radius: 5px; /* حواف مدورة */
+        color: #fff;
+        
+    }
+    
+  
+

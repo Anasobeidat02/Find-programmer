@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Now</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/log in project/Pay Now.CSS">
+
+</head>
+
+<body>
+    <div class="payment-container">
+        <h1>Complete Your Payment</h1>
+        <div class="input-group">
+            <label for="username">User Name:</label>
+            <input type="text" id="username" placeholder="Enter Your Name">
+        </div>
+        <div class="input-group">
+            <label for="programmerName">Programmer Name:</label>
+            <input type="text" id="programmerName" placeholder="Enter Programmer Name">
+        </div>
+        <div class="input-group">
+            <label for="paymentAmount">Payment Amount:</label>
+            <input type="number" id="paymentAmount" placeholder="Enter Payment Amount">
+        </div>
+        <button onclick="processPayment()">Pay Now</button>
+        <div class="confirmation-message" id="confirmationMessage">
+            <h1>Payment Successful!</h1>
+            <p>Thank you, <span id="userName"></span>, for your payment of <span id="amountPaid"></span> USD.</p>
+            <p>Your order number is: <span id="orderNumber"></span></p>
+            <p>Programmed by: <span id="confirmedProgrammerName"></span></p>
+        </div>
+    </div>
+    <button class="button-1" ><a href="/Payment" >Back </a></button>
+
+    <script>
+        function processPayment() {
+            const username = document.getElementById('username').value;
+            const programmerName = document.getElementById('programmerName').value;
+            const amount = document.getElementById('paymentAmount').value;
+
+            if (username === '' || programmerName === '' || amount === '' || amount <= 0) {
+                alert('Please enter a valid username, programmer name, and payment amount.');
+                return;
+            }
+
+            // Simulating payment processing and order number generation
+            const orderNumber = Math.floor(Math.random() * 1000000);
+
+            // Update confirmation message
+            document.getElementById('userName').innerText = username;
+            document.getElementById('amountPaid').innerText = amount;
+            document.getElementById('orderNumber').innerText = orderNumber;
+            document.getElementById('confirmedProgrammerName').innerText = programmerName;
+
+            // Show confirmation message and hide payment form
+            document.querySelector('.confirmation-message').style.display = 'block';
+            document.querySelector('.payment-container h1').style.display = 'none';
+            document.querySelectorAll('.input-group').forEach(group => group.style.display = 'none');
+            document.querySelector('button').style.display = 'none';
+        }
+    </script>
+    
+    
+</body>
+
+</html>
