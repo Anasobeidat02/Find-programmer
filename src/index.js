@@ -16,6 +16,7 @@ const { MongoClient, ObjectId } = require("mongodb");
 const collection = require("./config");
 const { log } = require("console");
 const app = express();
+require('dotenv').config(); // تحميل المتغيرات من .env
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "../views")); // بالعودة خطوة للخلف للوصول إلى "views" بجانب "src"
@@ -28,8 +29,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // تأكد من أن سلسلة الاتصال (connection string) محددة
-const url =
-  "mongodb+srv://anasmobeidat86:anas2002@cluster0.2vx4res.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const url = process.env.MONGODB_URI;
 
 // إنشاء `MongoClient` باستخدام سلسلة الاتصال
 const client = new MongoClient(url, {

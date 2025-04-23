@@ -1,0 +1,32 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# البيئة
+.env
+.env.local
+.env.*.local
+
+# VSCode settings
+.vscode/
+
+# بناء المشروع
+dist/
+build/
+
+# نظام التشغيل
+.DS_Store
+Thumbs.db
+
+# تغطية الاختبارات
+coverage/
+
+# Logs
+logs/
+*.log
+
+# نسخ احتياطية مؤقتة
+*.bak
+*.tmp
