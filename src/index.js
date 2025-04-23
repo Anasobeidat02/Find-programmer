@@ -1,7 +1,8 @@
 // main server
 
-const express = require("express");
+require("dotenv").config(); // تحميل المتغيرات من .env
 
+const express = require("express");
 const path = require("path"); // for handling file paths
 const WebSocket = require("ws");
 const multer = require("multer");
@@ -16,7 +17,6 @@ const { MongoClient, ObjectId } = require("mongodb");
 const collection = require("./config");
 const { log } = require("console");
 const app = express();
-require('dotenv').config(); // تحميل المتغيرات من .env
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "../views")); // بالعودة خطوة للخلف للوصول إلى "views" بجانب "src"
@@ -50,6 +50,7 @@ mongoose
   .catch((error) => {
     console.error("Error with connecting with DB", error);
   });
+
 // Multer setup
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
